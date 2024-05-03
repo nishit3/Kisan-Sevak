@@ -35,7 +35,7 @@ class _StorageScreenState extends State<StorageScreen>
     setState(() {
       _isLoading = true;
     });
-    final storageModulesResponse = await http.get(Uri.parse('https://ywqiiurra7.execute-api.ap-south-1.amazonaws.com/prod/get-storage-modules'),);
+    final storageModulesResponse = await http.get(Uri.parse('https://ENDPOINT/get-storage-modules'),);
     final storageModulesResponseBody = await jsonDecode(storageModulesResponse.body);
     final storageModulesList = await storageModulesResponseBody['modules'];
     for (final module in storageModulesList)
@@ -45,7 +45,7 @@ class _StorageScreenState extends State<StorageScreen>
       Humidity = module["Humidity"];
       fmUID = module["fmUID"];
     }
-    final response = await http.post(Uri.parse("https://ywqiiurra7.execute-api.ap-south-1.amazonaws.com/prod/get-storage-img?fmUID=fm1"));
+    final response = await http.post(Uri.parse("https://ENDPOINT/get-storage-img?fmUID=fm1"));
     final responseBodyBytes = response.bodyBytes;
     camImage = Image.memory(Uint8List.fromList(responseBodyBytes)).image;
     setState(() {
