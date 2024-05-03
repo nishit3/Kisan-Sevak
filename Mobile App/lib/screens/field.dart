@@ -44,7 +44,7 @@ class _FieldScreenState extends State<FieldScreen>
     setState(() {
       _isLoading = true;
     });
-    final fieldModulesResponse = await http.get(Uri.parse('https://ywqiiurra7.execute-api.ap-south-1.amazonaws.com/prod/get-field-modules'),);
+    final fieldModulesResponse = await http.get(Uri.parse('https://ENDPOINT/get-field-modules'),);
     final fieldModulesResponseBody = await jsonDecode(fieldModulesResponse.body);
     final fieldModulesList = await fieldModulesResponseBody['modules'];
     for (final module in fieldModulesList)
@@ -83,7 +83,7 @@ class _FieldScreenState extends State<FieldScreen>
       "CropType": CropType,
     };
       await http.post(
-      Uri.parse('https://ywqiiurra7.execute-api.ap-south-1.amazonaws.com/prod/update-soil-crop-type?fmUID=fm1'),
+      Uri.parse('https://ENDPOINT/update-soil-crop-type?fmUID=fm1'),
       headers: {'Content-Type': 'application/json'},
       body: json.encode(postData)
       );
