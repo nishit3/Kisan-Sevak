@@ -6,9 +6,9 @@
 #define DHTTYPE DHT11
 DHT dht(DHTPIN, DHTTYPE);
 
-const char* ssid = "AQI";
-const char* password = "aqiproject";
-const char* host = "ywqiiurra7.execute-api.ap-south-1.amazonaws.com";
+const char* ssid = "ssid";
+const char* password = "pass";
+const char* host = "ENDPOINT";
 const int httpsPort = 443;
 const int flame1 = 36; 
 const int flame2 = 39; 
