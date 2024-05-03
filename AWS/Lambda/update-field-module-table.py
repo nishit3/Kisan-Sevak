@@ -65,7 +65,7 @@ def lambda_handler(event, context):
     }
     
     response = client.invoke_endpoint(
-        EndpointName='pytorch-inference-2024-03-28-04-38-32-034', 
+        EndpointName='pytorch-inference-ENDPOINT', 
         ContentType='application/json',
         Body=json.dumps(body)
     )
@@ -87,7 +87,7 @@ def lambda_handler(event, context):
     }
     
     response2 = client.invoke_endpoint(
-        EndpointName='pytorch-inference-2024-03-28-04-43-28-596', 
+        EndpointName='pytorch-inference-ENDPOINT', 
         ContentType='application/json',
         Body=json.dumps(body2)
     )
