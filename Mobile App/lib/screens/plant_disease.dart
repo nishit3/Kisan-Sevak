@@ -21,7 +21,7 @@ class PlantDiseaseScreenState extends State<PlantDiseaseScreen>
   bool _isProcessed = false;
   String _predictions = "";
   bool _isPredicting = false;
-  final String _apiEndpoint = "https://016c-2401-4900-16a3-d570-823-7d0-621e-4cfc.ngrok-free.app/detectPlantDisease";
+  final String _apiEndpoint = "https://ENDPOINT.ngrok-free.app/detectPlantDisease";
 
   Future _predictAndDisplay() async
   {
