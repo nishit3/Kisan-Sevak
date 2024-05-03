@@ -36,7 +36,7 @@ class _HomeScreenState extends State<HomeScreen>
       _isLoading = true;
     });
 
-    final fieldModulesResponse = await http.get(Uri.parse('https://ywqiiurra7.execute-api.ap-south-1.amazonaws.com/prod/get-field-modules'),);
+    final fieldModulesResponse = await http.get(Uri.parse('https://ENDPOINT/prod/get-field-modules'),);
     final fieldModulesResponseBody = await jsonDecode(fieldModulesResponse.body);
     final fieldModulesList = await fieldModulesResponseBody['modules'];
     for (final module in fieldModulesList)
@@ -53,7 +53,7 @@ class _HomeScreenState extends State<HomeScreen>
       );
     }
 
-    final storageModulesResponse = await http.get(Uri.parse('https://ywqiiurra7.execute-api.ap-south-1.amazonaws.com/prod/get-storage-modules'),);
+    final storageModulesResponse = await http.get(Uri.parse('https://ENDPOINT/prod/get-storage-modules'),);
     final storageModulesResponseBody = await jsonDecode(storageModulesResponse.body);
     final storageModulesList = await storageModulesResponseBody['modules'];
     for (final module in storageModulesList)
