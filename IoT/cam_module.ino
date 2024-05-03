@@ -22,9 +22,9 @@
 #define HREF_GPIO_NUM     23
 #define PCLK_GPIO_NUM     22
 
-const char* ssid = "AQI";
-const char* password = "aqiproject";
-const char* host = "ywqiiurra7.execute-api.ap-south-1.amazonaws.com";
+const char* ssid = "ssid";
+const char* password = "pass";
+const char* host = "ENDPOINT";
 const int httpsPort = 443;
 
 void setup() {
