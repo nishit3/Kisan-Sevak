@@ -1,0 +1,17 @@
+{
+ "fmUID": "fm1",
+ "BestFertilizer": "17-17-17",
+ "CropType": "CT_Wheat",
+ "Humidity": 37,
+ "lat": 23.30198685045067,
+ "lng": 72.65916400671328,
+ "Moisture": 0,
+ "Nitrogen": 12,
+ "pH": 7,
+ "Phosphorous": 0,
+ "Potassium": 15,
+ "rain": 12,
+ "RecommendedCrop": "Mothbeans",
+ "SoilType": "ST_Black",
+ "Temperature": 25.8
+}
