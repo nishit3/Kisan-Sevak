@@ -24,7 +24,7 @@ class _FieldCamFeedState extends State<FieldCamFeed>
     setState(() {
       _isLoading = true;
     });
-    final response = await http.post(Uri.parse("https://ywqiiurra7.execute-api.ap-south-1.amazonaws.com/prod/get-farm-img?fmUID=fm1"));
+    final response = await http.post(Uri.parse("https://ENDPOINT/prod/get-farm-img?fmUID=fm1"));
     final responseBodyBytes = response.bodyBytes;
     camImage = Image.memory(Uint8List.fromList(responseBodyBytes)).image;
     setState(() {
