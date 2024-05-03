@@ -35,7 +35,7 @@ class _NotificationScreenState extends State<NotificationScreen>
     setState(() {
       isLoading=true;
     });
-    final response = await http.get(Uri.parse('https://ywqiiurra7.execute-api.ap-south-1.amazonaws.com/prod/get-farm-alert-notifs'),);
+    final response = await http.get(Uri.parse('https://ENDPOINT/get-farm-alert-notifs'),);
     final responseBody = await jsonDecode(response.body);
     final notificationsMapList = await responseBody['alerts'];
 
