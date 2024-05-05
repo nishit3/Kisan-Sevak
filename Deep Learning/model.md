@@ -19,6 +19,11 @@ includes environmental and soil parameters to help in recommending the appropria
 - Phosphorous (P): Ratio of phosphorous content in the soil.
 - Fertilizer Name: Name of the recommended fertilizer.
 
+## Model Architecture
+
+
+![sap_ann_fert](https://github.com/Vansh912/Kisan-Sevak/assets/89155230/44df71d5-b744-410c-8318-110ce2e271bf)
+
 ## Crop Recommendation Dataset
 
 This [dataset](https://www.kaggle.com/datasets/siddharthss/crop-recommendation-dataset) is collected to facilitate precision agriculture by recommending the most suitable crops based on various soil and climatic parameters.
@@ -30,3 +35,8 @@ This [dataset](https://www.kaggle.com/datasets/siddharthss/crop-recommendation-d
 - Humidity: Relative humidity percentage.
 - pH: pH value of the soil.
 - Rainfall: Annual rainfall measured in mm.
+
+## Model Architecture
+
+
+![sap_ann_crop](https://github.com/Vansh912/Kisan-Sevak/assets/89155230/bf198897-3c18-44c0-b6c8-c96dcba186ec)
