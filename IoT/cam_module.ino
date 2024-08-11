@@ -79,7 +79,7 @@ void captureAndEncodeToBase64() {
     String base64Image = base64::encode(fb->buf, fb->len);
     esp_camera_fb_return(fb);
     HTTPClient http;
-    String url = "https://ywqiiurra7.execute-api.ap-south-1.amazonaws.com/prod/upload-storage-img?fmUID=fm1";
+    String url = "https://ENDPOINT/prod/upload-storage-img?fmUID=fm1";
     http.begin(url);
     http.addHeader("Content-Type", "text/plain");
     int httpResponseCode = http.POST(base64Image);
